@@ -1,0 +1,16 @@
+.Detail {
+    display: flex;
+    flex-flow: column;
+    width: 40%;
+    
+}
+
+.arrow {
+    position: relative;
+    left: -20px;
+    width: 0;
+	height: 0;
+	border-width: 20px 20px 20px 0;
+	border-color: transparent #e71212 transparent transparent;
+	border-style: solid;
+}
