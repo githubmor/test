@@ -4,7 +4,6 @@
 .info{
     display: flex;
     flex-direction: row;
-    background-color: blueviolet;
     margin: 10px 0;
 }
 
@@ -18,7 +17,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 3px solid cadetblue;
+    border: 3px solid blue;
     text-align: center;
     line-height: 50px;
 }
@@ -26,30 +25,42 @@
 .stepline{
     height: 100%;
     margin-left: 25px;
-    border-left: 3px solid cadetblue;
+    border-left: 3px solid blue;
 }
 
 .rightStep{
-    background-color: chocolate;
+    margin-left: 10px;
 }
-.rightStep >h4> p {
+.rightStep >h4 {
     margin-top: 0;
     margin-bottom: 10px;
-    background-color: aqua;
 }
 .content{
     display: flex;
     flex-direction: row;
-    background-color: chartreuse;
 }
 .img{
     width: 100px;
+    height: 80px;
     flex-shrink: 0;
-    background-color: crimson;
 }
 .descinfo{
-    background-color: darkgreen;
+    margin-left: 10px;
+}
+.descinfo>p{
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 .descinfo>h6{
-    background-color: darkgreen;
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 20px;
+    padding-left: 4px;
+    width: 100px;
+    border-radius: 4px;
+    white-space: nowrap;
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    background-color: lightgray;
 }

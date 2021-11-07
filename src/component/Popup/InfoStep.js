@@ -1,7 +1,6 @@
 import React,{useState} from 'react'
 import './InfoStep.css';
 
-
 export default function InfoStep({ info,lastStep }) {
 
     const isLastStep = lastStep ? "block" :"none" ;
@@ -18,7 +17,7 @@ export default function InfoStep({ info,lastStep }) {
                 <div className='rightStep'>
                     <h4>{info.title}</h4>
                     <div className='content'>
-                        <div className='img' />
+                        <img src={require('./logo.JPG').default}  className='img' />
                         <div className='descinfo'>
                             <p >{info.description}</p>
                             <h6>{info.key}</h6>

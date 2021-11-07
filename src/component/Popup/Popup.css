@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 .container{
     width: 50%;
     position: absolute;
@@ -6,6 +9,15 @@
     box-shadow: 0 0 20px lightgray;
     padding: 16px;
 }
-.container>h3{
-    margin-left: 16px;
+.container::before {
+    content: "";
+    width: 0; 
+    height: 0; 
+    position: absolute;
+    top: 80px;
+    left: -20px;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent; 
+    border-right:20px solid white; 
+    display: inline-block;
 }

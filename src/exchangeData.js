@@ -16,12 +16,6 @@ export default [
                 description:'On your API Key, enable "Reading" and "Spot & Margin Trading" and add the following Coinrule IP as a trusted IP on Binance',
                 image_uri:'./images/im2.jpg',
                 key:'3.121.67.74 18.156.88.234 3.68.22.15 3.68.24.139 3.67.251.235 3.67.128.205 3.68.154.20'
-            },
-            {
-                step:3,
-                title:'Copy and Paste Your Key',
-                description:'As final step, copy/paste the API key and Secret Key eg. z3UPj1wmzjCoru4302 into Coinrule. You are set for trading!',
-                image_uri:'./images/im3.jpg'
             }
         ]
     },

@@ -9,6 +9,7 @@ export default function Popup({ exchange }) {
 
     return (
         <>
+        <div className='arrow'/>
             <div className='container'>
                 <h3>How To Connect Your {exchange.exchangeName} Account</h3>
                 <div  >
