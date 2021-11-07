@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React from 'react'
 import './InfoStep.css';
 
 export default function InfoStep({ info,lastStep }) {
