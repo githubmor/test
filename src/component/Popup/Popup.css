@@ -4,7 +4,9 @@
 .container{
     width: 50%;
     position: absolute;
-    left: 200px;
+    background-color: white;
+    top: 9%;
+    left: 23%;
     border-radius: 8px;
     box-shadow: 0 0 20px lightgray;
     padding: 16px;

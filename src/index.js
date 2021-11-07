@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
-import Popup from './component/Popup/Popup'
-import data from './exchangeData'
+import Popup from './component/Popup/Popup';
+import data from './exchangeData';
+import './index.css';
 
 export default function MyApp() {
 
@@ -14,8 +15,6 @@ export default function MyApp() {
 
     return (
         <>
-            <h2>Connect New Exchange</h2>
-            <h4>Choose among the top crypto currency exchanges</h4>
             <select onChange={change} value={exchange}>
                 {data.map(
                     ex => (
