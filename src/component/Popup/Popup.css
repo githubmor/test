@@ -1,3 +1,11 @@
 .container{
-    background-color: blue;
+    width: 50%;
+    position: absolute;
+    left: 200px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px lightgray;
+    padding: 16px;
+}
+.container>h3{
+    margin-left: 16px;
 }

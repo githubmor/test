@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
-import InfoStep from './InfoStep'
+import React, { useState } from 'react';
+import './Popup.css';
+import InfoStep from './InfoStep';
 
 
 export default function Popup({ exchange }) {
@@ -9,13 +10,14 @@ export default function Popup({ exchange }) {
     return (
         <>
             <div className='container'>
-                <h2>How To Connect Your {exchange.exchangeName} Account</h2>
-                <div className='contect' >
+                <h3>How To Connect Your {exchange.exchangeName} Account</h3>
+                <div  >
                     {
                         exchange.info.map(
-                            info => (
-                                <InfoStep info={info}/>
+                            (dt, i,arr) => (
+                                    <InfoStep info={dt} lastStep={i<arr.length-1} />
                             )
+
                         )
                     }
                 </div>

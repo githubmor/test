@@ -26,6 +26,7 @@ export default function MyApp() {
             <Popup exchange={ 
                 data.find((iu)=>{return iu.exchangeName===exchange})
             } />
+            
         </>
     )
 

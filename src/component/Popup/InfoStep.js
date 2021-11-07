@@ -1,8 +1,11 @@
-import React from 'react'
+import React,{useState} from 'react'
+import './InfoStep.css';
 
 
-export default function InfoStep({ info }) {
+export default function InfoStep({ info,lastStep }) {
 
+    const isLastStep = lastStep ? "block" :"none" ;
+    
     return (
         <>
             <div className='info'>
@@ -10,9 +13,9 @@ export default function InfoStep({ info }) {
                     <div className='circle'>
                         {info.step}
                     </div>
-                    <div className='stepline' />
+                    <div className='stepline' style={{display:isLastStep}} />
                 </div>
-                <div className='description'>
+                <div className='rightStep'>
                     <h4>{info.title}</h4>
                     <div className='content'>
                         <div className='img' />
