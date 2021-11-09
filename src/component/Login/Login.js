@@ -3,19 +3,24 @@ import './Login.css';
 
 export default function Login() {
 
-    const [color, setColor] = useState("blue")
+    const [data, setColor] = useState({color:'blue',border:''})
 
     const changeColor = (e)=>{
         e.preventDefault();
-        setColor(e.target.value);
+        setColor({...data,color : e.target.value});
+    }
+    const changeBorder = (e)=>{
+        e.preventDefault();
+        setColor({...data,border:e.target.value +'%'});
     }
 
     return (
-        <><div className='result' style={{ backgroundColor: color }}>
-            <h4>{color}</h4>
+        <><div className='result' style={{ backgroundColor: data.color , borderRadius:data.border }}>
+            {data.color}
+            {data.border}
         </div>
         <input type='color' onChange={changeColor}/>
-        
+        <input type='range' max='50' onChange={changeBorder}/>
         </>
 
     )
