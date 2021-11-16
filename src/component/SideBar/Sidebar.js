@@ -6,12 +6,12 @@ import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 export default function SideBar() {
 
     return(
-        <SideNav
+        <SideNav expanded="true"
     onSelect={(selected) => {
         console.log(selected);
     }}
 >
-    <SideNav.Toggle />
+
     <SideNav.Nav defaultSelected="home">
         <NavItem eventKey="home">
             <NavIcon>
@@ -21,7 +21,15 @@ export default function SideBar() {
                 Home
             </NavText>
         </NavItem>
-        <NavItem eventKey="charts">
+        <NavItem eventKey="rule">
+            <NavIcon>
+                <i className="fa fa-fw fa-rule" style={{ fontSize: '1.75em' }} />
+            </NavIcon>
+            <NavText>
+                Rule
+            </NavText>
+        </NavItem>
+        {/* <NavItem eventKey="charts">
             <NavIcon>
                 <i className="fa fa-fw fa-line-chart" style={{ fontSize: '1.75em' }} />
             </NavIcon>
@@ -38,7 +46,7 @@ export default function SideBar() {
                     Bar Chart
                 </NavText>
             </NavItem>
-        </NavItem>
+        </NavItem> */}
     </SideNav.Nav>
 </SideNav>
     )

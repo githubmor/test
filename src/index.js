@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Popup from './component/Popup/Popup';
 import data from './exchangeData';
 import  Login  from "./component/Login/Login";
+import SideBar from './component/SideBar/Sidebar'
 import './index.css';
 
 export default function MyApp() {
@@ -13,7 +14,7 @@ export default function MyApp() {
     //     setExchange(event.target.value)
     // }
     
-    return <Login />
+    return <SideBar /> //<Login />
 
     // return (
     //     <>
