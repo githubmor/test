@@ -1,0 +1,14 @@
+.sidebar{
+    background-color: crimson;
+    width: 250px;
+    height: 100vh;
+}
+
+.content{
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    flex-flow: row;
+}

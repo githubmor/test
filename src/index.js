@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Layout from './component/Sidbar/layout'
+import { BrowserRouter  } from 'react-router-dom'
+import './index.css'
+
 
 export default function MyApp() {
 
@@ -10,7 +13,11 @@ export default function MyApp() {
     //     setExchange(event.target.value)
     // }
     
-    return <Layout />
+    return (
+        <BrowserRouter>
+    <Layout />
+    </BrowserRouter>
+    )
 
     // return (
     //     <>

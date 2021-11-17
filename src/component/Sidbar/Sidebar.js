@@ -1,21 +1,20 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Sidebar.css' 
 
 export default function Sidebar() {
-    const items =[
-        {name :'home'},
-        {name :'about'},
-        {name:'rule'},
-        {name:'exchange'}
+    const pages =[
+        {name :'Home',route:''},
+        {name :'About',route:"about"},
+        {name:'Rule',route:"rule"},
+        {name:'Exchange',route:"exchange"}
     ]
-    return(
-        <div className="container">
-            
-            {items.map(iy=>(
-                <div className='sidebarItem'>
-                {iy.name}
-                </div>
+    return(   
+            <>    
+            {pages.map(page=>(
+                <Link to={`/${page.route}`} >{page.name}</Link>
+
             ))}
-        </div>
+            </>
     )
 }

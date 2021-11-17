@@ -1,19 +1,14 @@
-.container{
-    background-color: brown;
-    width: 250px;
-    height: 100vh;
-}
 
-.sidebarItem{
+
+a{
     padding: 25px;
     font-size: 20px;
     font-weight: bold;
-}
-.sidebarItem:focus-within{
-    background-color: darkmagenta;
+    display: block;
 }
 
-.sidebarItem:hover{
+
+a:hover{
     background-color: coral;
     cursor: pointer;
 }
