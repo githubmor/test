@@ -1,9 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import Popup from './component/Popup/Popup';
-import data from './exchangeData';
-import  Login  from "./component/Login/Login";
-import './index.css';
+import Layout from './component/Sidbar/layout'
 
 export default function MyApp() {
 
@@ -13,7 +10,7 @@ export default function MyApp() {
     //     setExchange(event.target.value)
     // }
     
-    return <Login />
+    return <Layout />
 
     // return (
     //     <>
