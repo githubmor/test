@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, BrowserRouter as Router } from 'react-router-dom'
+
 import Popup from './component/Popup/Popup';
 import data from './exchangeData';
 import  Login  from "./component/Login/Login";
 import SideBar from './component/SideBar/Sidebar'
+import SidbarApp from './component/SideBar/SidbarApp'
 import './index.css';
 
 export default function MyApp() {
@@ -14,7 +17,8 @@ export default function MyApp() {
     //     setExchange(event.target.value)
     // }
     
-    return <SideBar /> //<Login />
+    return  <SidbarApp />
+  //<Login />
 
     // return (
     //     <>
